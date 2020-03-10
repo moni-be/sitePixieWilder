@@ -1,0 +1,39 @@
+body,
+html {
+    box-sizing: border-box;
+}
+
+#formulaire {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 75%;
+
+}
+
+.form input,
+textarea {
+    width: 75%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 1em;
+}
+
+.statue {
+    margin: 10px 12.5%;
+    padding: 1em;
+    width: 75%;
+}
+
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 23%;
+}
