@@ -23,9 +23,6 @@ section {
 a{
   text-decoration: none;
 }
-h2:hover{
-  color:red;
-}
 p{
   margin: 20px 20px;
   text-align: justify;
@@ -38,7 +35,7 @@ h2, p{
 
 h2:hover{
   color: red;
-  font-size: 150%;
+  
 }
 
 .carousel:hover {
