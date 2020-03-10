@@ -1,13 +1,17 @@
-body{
-  
+*{
+  font-family: 'Raleway', sans-serif;
 }
 
 section {
   padding: 50px 0;
 }
 
-.bgd-color{
-  background-color:rgba(194, 251, 255, 0.5);
+.bgd1{
+  background-color:rgba(204,232,234, 1);
+}
+
+.bgd2{
+  background-color:rgba(204,221,228, 1);
 }
 
 .artist-link{
@@ -18,7 +22,9 @@ section {
 a{
   text-decoration: none;
 }
-
+h2:hover{
+  color:red;
+}
 p{
   margin: 20px 20px;
   text-align: justify;
