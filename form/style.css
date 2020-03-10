@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
 }
-body, html {
+
+body,
+html {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    background:linear-gradient(rgba(252, 76 , 2, .5),rgba(0 , 87, 120, .5)) 
+    background: linear-gradient(rgba(252, 76, 2, .5), rgba(0, 87, 120, .5))
 }
 
-h2{
+h2 {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-
 
 .form {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
-    
     padding: 1em;
     box-sizing: border-box;
     width: 50%;
@@ -26,7 +26,7 @@ h2{
 }
 
 .form input,
-textarea {
+textarea, .button {
     width: 75%;
     box-sizing: border-box;
     margin: 10px auto;
@@ -41,9 +41,40 @@ textarea {
     border-radius: 10px;
 }
 
-
 .button {
+    width: 25%;
     display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
+    justify-content: center;
+    margin: 10 auto;
+    padding: 1em;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    background-color: #005778;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px 5px  black;
+    transition-duration: 1s;
+    transition-property: unset;
+    transition-duration: 2s;
+  }
+  
+.button:hover, .button:focus {
+    color:whitesmoke;
+    width: 30%;
+    
+    
+}
+
+.button:active {
+  background-color: #fc4c02;
+  box-shadow: 0 5px whitesmoke;
+  transform: translateX(4px);
+}
+
+/* @media (max-width: 600px)*/
+
+@media screen and (max-width:961px) {
+    
 }
