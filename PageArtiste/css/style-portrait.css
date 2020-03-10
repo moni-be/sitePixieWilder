@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
+
+@media only screen and (min-width:360px)
+{
+
+*{padding-left: 0; margin: 0;}
+
+body{font-family: 'Raleway', sans-serif;  }
+
+.portrait{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;  
+}
+
+.portrait .art .fiche, .photo{
+    width: 95%;
+    align-items: center;
+}
+
+.photo{
+    width: 95%;
+    padding: 5%;
+    margin: auto;
+}
+
+.description
+{
+    font-weight: 300;
+    width: 95%;
+    padding: 5%;
+    text-align: justify;
+
+}
+
+.presta{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2%;
+}
+h2{
+    width: 100%;
+    padding-left: 20px;
+
+}
+.listing{
+    width: 45%;
+    padding-left: 10px;
+}
+
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.galerie .photogal{
+    width: 80%;
+    padding: 5px;
+}
+.galerie a[href*="http"]{
+    width: 50%;
+}
+
+/* .photogal:hover{
+    z-index:5;
+    width: 48%;
+    height: auto ;
+} */
+
+}
+
+
