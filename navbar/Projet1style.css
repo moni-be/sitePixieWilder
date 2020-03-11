@@ -8,18 +8,16 @@
 }
 
 html {
+  height: 100%;
   background-color: white;
+  position: relative;
 }
 
 body {
   height: 100%;
-  position: relative;
+  margin: 0px;
   font-family: 'Raleway', sans-serif;
   background-color: white;
-}
-
-section {
-  height: 100vh;
 }
 
 header {
@@ -77,6 +75,7 @@ p {
 
 p {
   margin-left: 20px;
+  color: #613e6e;
 }
 
 nav li {
@@ -104,16 +103,18 @@ nav li {
   margin-top: 110px;
   width: 100%;
   height: 40%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .AboutUs {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 15%;
+  margin-top: 3%;
+  margin-bottom: 12%;
+  margin-left: 3%;
+  color: #b37cb5;
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   background-color: rgba(252, 76, 2, 1);
   width: 100%;
