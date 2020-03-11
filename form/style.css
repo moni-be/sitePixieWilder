@@ -1,4 +1,8 @@
-*{
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,10 +11,67 @@ body,
 html {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
-h1 {
+header {
+    position: absolute;
+    top: 0;
+    /*margin-bottom: 70px;*/
+  }
+  
+  .navBox a {
+    color: rgba(0,142,151, 1);
+    text-align: center;
+    text-decoration: none;
+  }
+  .navBox a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba( 252, 76, 2, 1);
+  }
+  
+  #SiteName {
+    font-size: 1.2em;
+    margin-left: 0px;
+  }
+  
+  h2 {
+    padding: 20px;
+  }
+  
+  h2, p {
+    font-size: 1.2em;
+  }
+  
+  p {
+    margin-left: 20px;
+  }
+  
+  .navBox { 
+    width: 100%;
+  }
+  
+  nav li {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.3em;
+    float: left;
+    justify-content: bottom;
+  }
+  
+  .navBar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(229,243,244, 1);
+    position: fixed;
+    width: 100%;
+    
+  }
+
+
+form h1 {
+    display: block;
     text-align: center;
 }
 
@@ -18,15 +79,15 @@ h1 {
 .form {
     display: flex;
     flex-direction: column;
-    margin: 10px auto;
+    margin: 70px auto; /* valeur a mettre a element en dessous navbar */
     padding: 1em;
     box-sizing: border-box;
     width: 50%;
-
 }
 
 .form input,
-textarea, .button {
+textarea,
+.button {
     width: 75%;
     box-sizing: border-box;
     margin: 10px auto;
@@ -41,12 +102,17 @@ textarea, .button {
     border-radius: 10px;
 }
 
+button {
+    margin: 10 auto;
+    padding: 10 auto;
+    display: block;
+    justify-content: space-around;
+}
+
 .button {
     width: 25%;
     display: flex;
     justify-content: center;
-    margin: 10 auto;
-    padding: 1em;
     font-size: 12px;
     cursor: pointer;
     text-align: center;
@@ -54,27 +120,187 @@ textarea, .button {
     background-color: linear-gradient(rgba(252, 76, 2, .5), rgba(0, 87, 120, .5));
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px 5px  black;
+    box-shadow: 0 9px 5px black;
     transition-duration: 1s;
     transition-property: unset;
     transition-duration: 2s;
-  }
-  
-.button:hover, .button:focus {
-    color:black;
+}
+
+.button:hover,
+.button:focus {
+    color: black;
     width: 30%;
 
 }
 
 .button:active {
-  
-  box-shadow: 0 5px whitesmoke;
-  transform: translateX(4px);
+
+    box-shadow: 0 5px whitesmoke;
+    transform: translateX(4px);
 }
 
-/* @media (max-width: 600px)*/
-
-@media screen and (max-width:767px) {
 
 
+.AboutUs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(252, 76, 2, 1);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer,
+.footerBar {
+    /*display: inline-flex;*/
+    justify-content: left;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(0, 142, 151, 1);
+}
+
+
+.footer-social-icons {
+    width: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin: 0 auto;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline-flex;
+    padding: 5px;
+}
+
+.social-icons a {
+    color: rgba(25, 7, 0, 1);
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: white;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+    color: white;
+}
+
+.fa-twitter {
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: white;
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+    color: white;
+}
+
+.fa-rss {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: white;
+}
+
+.fa-rss:hover {
+    background-color: #eb8231;
+    color: white;
+}
+
+.fa-youtube {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: white;
+}
+
+.fa-youtube:hover {
+    background-color: #e64a41;
+    color: white;
+}
+
+.fa-linkedin {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: white;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+    color: white;
+}
+
+.fa-github {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: white;
+}
+
+.fa-github:hover {
+    background-color: #5a32a3;
+    color: white;
+}
+
+@media screen and (min-width: 700px) {
+    .accueil {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
 }
