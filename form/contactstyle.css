@@ -150,6 +150,7 @@ textarea,
   margin: 10px auto;
   padding: 1em;
   border-radius: 10px;
+  box-shadow: inset 5px 10px 12px 2px;
 }
 
 .statue {
@@ -178,22 +179,22 @@ button {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px 5px black;
-  transition-duration: 1s;
-  transition-property: inset;
-  transition-duration: 2s;
+  transition-property: inset 5s;
+  transition-duration: 5s;
+  
 }
 
 .button:hover,
 .button:focus {
   color: black;
-  width: 30%;
+  width: 50%;
 
 }
 
 .button:active {
-
-  box-shadow: 0 5px whitesmoke;
   transform: translateX(4px);
+  box-shadow: 0 5px whitesmoke;
+  
 }
 
 .AboutUs {
@@ -357,7 +358,7 @@ footer a:hover {
   color: white;
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:360px) {
   .navBox {
     visibility: hidden;
   }
