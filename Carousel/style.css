@@ -23,12 +23,6 @@ section {
 a{
   text-decoration: none;
 }
-p{
-  margin: 20px 20px;
-  text-align: justify;
-  padding-bottom: 20px;
-  color:black;
-}
 
 h2{
   color:#FC4C02;
@@ -86,6 +80,21 @@ h2{
       text-align: left;
       font-size: 0;
       animation: 15s slidy infinite; 
+    }
+
+
+    p{
+      margin: 20px 20px;
+      text-align: justify;
+      padding-bottom: 20px;
+      color:black;
+      border-radius: 50%;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+              transition:         transform .8s ease-in-out;
+    }
+    p:hover {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
     }
 
 
