@@ -1,112 +1,137 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
 
-*{padding-left: 0; margin: 0;}
+*,html,body,section,div,h1,h2,h3,h4,h5,h6,div,article,figure,figcaption
+{padding-left: 0; margin: 0;}
 
-body{font-family: 'Raleway', sans-serif; box-sizing: content-box;
-color: #001118; }
+body
+{
+    font-family: 'Raleway', sans-serif; 
+    box-sizing: content-box;
+    color: #001118; 
+}
 
 .main{
     width: 100%;
-    justify-content: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
 
 
 .portrait{
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 0; 
+    text-align: center;
 }
 
-.portrait .art .fiche .photo{
-    width: 80%;
+.portrait article figure{
+    width: 100%;
+    margin: auto;
 }
 
-.art,.fiche,.photo{
-    width: 50%;    
-    margin: 0 auto;
+
+figure .photo
+{
+    width: 40%
 }
 
-.fiche .description
+.description
 {
     font-weight: 300;
-    width: 100;
     text-align: justify;
-    margin: 0;
-    padding: 0;
+    font-size: 1em;
+    width: 60%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    clear: both; 
+    padding: 5% 20%;
 }
 
 .presta{
-    width: 100%;
-    padding: 5%;
-}
-h2{
-    width: 100%;
-    margin-left: 10%;
-    padding: 30px;
-    clear: both; 
-}
-.listing{
-    width: 25%;
-
-}
-
-.galerie{   
-    width: 100%;
-    margin-top: 30px;
-    justify-content: center;
-}
-
-.galerie .photogal{
-    width: 90%;
-    padding: 5px;
+    width: 55%;
     margin: auto;
+    padding: 0% 3%;
 }
-.galerie a[href*="http"]{
-    width: 50%;
+
+.listing{
+    width: 45%;
+    display: inline-block;
+}
+
+.listing ul{
+   padding-left: 25%;
+
+}
+
+.listing ul li{
+    text-align: left;
+}
+
+.galerie{  
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.photogal{
+    display: inline-block;
+    width: 23%;
+    padding-left: 1%;
 }
 
 
-/* 
 @media only screen and (min-width:360px)
 {
 
-*{padding: 0; margin: 0;}
-
 .main{
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-.main .portrait{
-    flex: none;
-    width: 90%; 
+    justify-content: center;
+    align-items: center; 
+    text-align: left;
 }
 
 .portrait{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center; 
-    width: 100%;  
+    width: initial; 
+    padding: 0;
+    margin: 0;
 }
 
-.portrait .art .fiche .photo{
+.portrait article figure{
+    justify-content: center;
     width: 100%;
+    padding: 10px;
     align-items: center;
 }
 
-.art,.fiche,.photo{
-    width: 90%;    
-    margin: 0 auto;
+figure .photo
+{
+    width: 70%;
+    margin-bottom: 30px;
 }
 
-.fiche .description
+
+.description
 {
-    font-weight: 300;
-    width: 100;
+    font-size: 1em;
     text-align: justify;
-    margin: 0;
-    padding: 0;
+}
+
+h2{
+    padding-top: 30px;
+    padding-bottom: 40px;
+
 }
 
 .presta{
@@ -114,35 +139,17 @@ h2{
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    padding: 5%;
-}
-h2{
-    width: 100%;
-    margin-left: 10%;
 
 }
-.listing{
-    width: 45%;
-    padding-left: 10px;
-}
+ .galerie{
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 80%;
+ }
 
-.galerie{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;    
-    width: 100%;
-    margin-top: 30px;
-    justify-content: center;
-}
-
-.galerie .photogal{
-    width: 90%;
-    padding: 5px;
-}
-.galerie a[href*="http"]{
-    width: 50%;
-}
+ .photogal{
+     width: 30%;
+ }
 
 }
- */
-
