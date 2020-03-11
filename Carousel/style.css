@@ -17,7 +17,7 @@ section {
 
 .artist-link{
   text-align: center;
-  border: 3px solid #FC4C02;
+  margin-top: 50px;
   }
 
 a{
@@ -35,21 +35,13 @@ h2{
 }
 
 .hov1 ,.hov2 ,.hov3 {
-  transition-property: background-color; /* Active la transition sur background-color */
+  transition-property: color; /* Active la transition sur background-color */
   transition-duration: 1s; /* La transition dure 1s */
   margin-bottom: 50px;
 }
 
-.hov1:hover {
-  background-color:#cce8ea;
-}
-
-.hov2:hover {
-  background-color:#B2DDDF;
-}
-
-.hov3:hover {
-  background-color:#b2ccd6;
+h2:hover{
+  color:#298e96;
 }
 
 .carousel:hover {
@@ -92,6 +84,7 @@ h2{
 
     p{
       margin: 20px 20px;
+      font-size: 25px;
       text-align: justify;
       padding-bottom: 20px;
       color:black;
@@ -104,6 +97,21 @@ h2{
               transform: rotate(360deg);
     }
 
+    @media screen and (max-width:600px){
+      p{
+        margin: 20px 20px;
+        font-size: 18px;
+        text-align: justify;
+        padding-bottom: 20px;
+        color:black;
+        border-radius: 50%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+                transition:         transform .8s ease-in-out;
+                -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+      }
+      
+    }
 
     @media screen and (min-width: 961px){
       section {
@@ -118,6 +126,7 @@ h2{
       .artist-link {
         margin-top: 50px;
         margin-right: 50px;
+      
       }
 
       h2{
