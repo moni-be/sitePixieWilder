@@ -10,9 +10,90 @@ body{
   display:flex;
   flex-direction: column;
 }
+/*HEADER */
 
+header {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  background-color: rgba(254, 201, 179, 1);
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul li a {
+  z-index: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.navBox li a:hover {
+  color: rgba(252, 76, 2, 1);
+  /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(127, 198, 203, 1));
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+nav li {
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+.navBox a {
+  color: rgba(0, 142, 151, 1);
+  text-align: center;
+  text-decoration: none;
+}
+
+h2 {
+  padding: 20px;
+}
+
+h2,
+p {
+  font-size: 1.2em;
+}
+
+p {
+  margin-left: 20px;
+}
+
+nav li {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.3em;
+  float: left;
+  justify-content: bottom;
+}
+
+.navBar {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(229, 243, 244, 1);
+  width: 100%;
+  height: 100px;
+}
+
+#linkNav {
+  margin-top: 40px;
+}
+
+/* Sections carousel*/
 section {
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
 .bgd1{
@@ -29,6 +110,7 @@ section {
   }
 
 a{
+  z-index: 1;
   text-decoration: none;
 }
 p{
@@ -51,7 +133,9 @@ h2{
 h2:hover{
   color:#298e96;
 }
-
+.first{
+  margin-top: 110px;
+}
 .carousel:hover {
     -webkit-filter: sepia(100%);
     filter: sepia(100%);
@@ -127,7 +211,7 @@ h2:hover{
         flex-direction: row;
       }
       .carousel {
-        margin: 40px;
+        margin: 100px 40px 40px 40px;
         width: 300%;
       }
 
