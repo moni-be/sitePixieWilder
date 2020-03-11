@@ -7,17 +7,16 @@ body,
 html {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    background: linear-gradient(rgba(252, 76, 2, .5), rgba(0, 87, 120, .5))
+    
 }
 
 h1 {
-    text-align: center;    
+    text-align: center;
 }
 
 
 .form {
     display: flex;
-
     flex-direction: column;
     margin: 10px auto;
     padding: 1em;
@@ -52,7 +51,7 @@ textarea, .button {
     cursor: pointer;
     text-align: center;
     color: black;
-    background-color: #005778;
+    background-color: linear-gradient(rgba(252, 76, 2, .5), rgba(0, 87, 120, .5));
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px 5px  black;
@@ -62,14 +61,13 @@ textarea, .button {
   }
   
 .button:hover, .button:focus {
-    color:whitesmoke;
+    color:black;
     width: 30%;
-    
-    
+
 }
 
 .button:active {
-  background-color: #fc4c02;
+  
   box-shadow: 0 5px whitesmoke;
   transform: translateX(4px);
 }
