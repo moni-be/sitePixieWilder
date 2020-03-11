@@ -31,6 +31,7 @@ h2{
 .hov1 ,.hov2 ,.hov3 {
   transition-property: background-color; /* Active la transition sur background-color */
   transition-duration: 1s; /* La transition dure 1s */
+  margin-bottom: 50px;
 }
 
 .hov1:hover {
