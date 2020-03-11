@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
 
+<<<<<<< HEAD
 *,html,body,section,div,h1,h2,h3,h4,h5,h6,div,article,figure,figcaption
 {padding-left: 0; margin: 0;}
 
@@ -35,11 +36,38 @@ body
 figure .photo
 {
     width: 40%
+=======
+@media only screen and (min-width:360px)
+{
+
+*{padding-left: 0; margin: 0;}
+
+body{font-family: 'Raleway', sans-serif;  }
+
+.portrait{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;  
+}
+
+.portrait .art .fiche, .photo{
+    width: 95%;
+    align-items: center;
+}
+
+.photo{
+    width: 95%;
+    padding: 5%;
+    margin: auto;
+>>>>>>> a4afabfaef3f665f55c06556bc9693af762966c6
 }
 
 .description
 {
     font-weight: 300;
+<<<<<<< HEAD
     text-align: justify;
     font-size: 1em;
     width: 60%;
@@ -153,3 +181,54 @@ h2{
  }
 
 }
+=======
+    width: 95%;
+    padding: 5%;
+    text-align: justify;
+
+}
+
+.presta{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2%;
+}
+h2{
+    width: 100%;
+    padding-left: 20px;
+
+}
+.listing{
+    width: 45%;
+    padding-left: 10px;
+}
+
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.galerie .photogal{
+    width: 80%;
+    padding: 5px;
+}
+.galerie a[href*="http"]{
+    width: 50%;
+}
+
+/* .photogal:hover{
+    z-index:5;
+    width: 48%;
+    height: auto ;
+} */
+
+}
+
+
+>>>>>>> a4afabfaef3f665f55c06556bc9693af762966c6
