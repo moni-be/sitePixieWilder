@@ -1,6 +1,6 @@
 *{
   font-family: 'Raleway', sans-serif;
-  /*comment*/
+  margin:0px;
 }
 
 section {
@@ -17,7 +17,7 @@ section {
 
 .artist-link{
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid #FC4C02;
   }
 
 a{
@@ -27,15 +27,28 @@ p{
   margin: 20px 20px;
   text-align: justify;
   padding-bottom: 20px;
-}
-
-h2, p{
   color:black;
 }
 
-h2:hover{
-  color: red;
-  
+h2{
+  color:#FC4C02;
+}
+
+.hov1 ,.hov2 ,.hov3 {
+  transition-property: background-color; /* Active la transition sur background-color */
+  transition-duration: 1s; /* La transition dure 1s */
+}
+
+.hov1:hover {
+  background-color:#cce8ea;
+}
+
+.hov2:hover {
+  background-color:#B2DDDF;
+}
+
+.hov3:hover {
+  background-color:#b2ccd6;
 }
 
 .carousel:hover {
