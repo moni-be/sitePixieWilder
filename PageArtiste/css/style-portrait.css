@@ -202,3 +202,18 @@ figure .photo
 }
 
 
+
+
+ .galerie{
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 80%;
+
+ }
+
+ .photogal{
+     width: 30%;
+ }
+
+}
