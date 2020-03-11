@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -18,16 +18,38 @@ body {
   background-color: white;
 }
 
+section {
+  height: 100vh;
+}
+
 header {
   width: 100%;
-  height: 100px;
-  background-color: rgba( 229, 243, 244, 1);
-  position: absolute;
+  height: 110px;
+  position: fixed;
+  background-color: rgba(254, 201, 179, 1);
   top: 0;
 }
 
 .logo {
   width: 200px;
+}
+
+nav ul li a {
+  z-index: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.navBox li a:hover {
+  color: rgba(252, 76, 2, 1);
+  /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(127, 198, 203, 1));
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 nav li {
@@ -39,22 +61,18 @@ li {
 }
 
 .navBox a {
-  color: rgba(0,142,151, 1);
+  color: rgba(0, 142, 151, 1);
   text-align: center;
   text-decoration: none;
-  text-shadow: 0px 0px 0.5px rgba(0,142,151, 1);
-}
-.navBox li a:hover {
-  color: rgba( 252, 76, 2, 1);
 }
 
 h2 {
   padding: 20px;
 }
 
-h2, p {
+h2,
+p {
   font-size: 1.2em;
-  text-shadow: 0px 0px 0.5px black;
 }
 
 p {
@@ -72,16 +90,20 @@ nav li {
 .navBar {
   list-style-type: none;
   overflow: hidden;
-  position: fixed; 
+  position: fixed;
+  background-color: rgba(229, 243, 244, 1);
+  width: 100%;
+  height: 100px;
 }
 
-#linkNav{
+#linkNav {
   margin-top: 40px;
 }
 
-#homeImg{
-  margin-top: 100px;
+#homeImg {
+  margin-top: 110px;
   width: 100%;
+  height: 40%;
 }
 
 .AboutUs {
@@ -93,9 +115,9 @@ nav li {
 footer {
   position: absolute;
   bottom: 0;
-  background-color: rgba(252,76,2, 1);
+  background-color: rgba(252, 76, 2, 1);
   width: 100%;
-  }
+}
 
 .footerBar {
   list-style-type: none;
@@ -106,123 +128,141 @@ footer {
   text-decoration: none;
 }
 
-footer, .footerBar {
-    /*display: inline-flex;*/
-    justify-content: left;
-    list-style-type: none;
-    overflow: hidden;
-    position: fixed;
-    padding: 10px;
-  }
+footer,
+.footerBar {
+  /*display: inline-flex;*/
+  justify-content: left;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  padding: 10px;
+}
+
 footer a {
   color: white;
 }
 
 footer a:hover {
-  color: rgba( 25, 7, 0, 1);
+  color: rgba(25, 7, 0, 1);
 }
 
 .footer-social-icons {
-    width: 350px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: center;
-    margin: 0 auto;
+  width: 350px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0 auto;
 }
+
 .social-icon {
-    color: #fff;
+  color: #fff;
 }
+
 .social-icons {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: baseline;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
 }
+
 .social-icons li {
-    vertical-align: top;
-    display: inline-flex;
-    padding : 5px;
+  vertical-align: top;
+  display: inline-flex;
+  padding: 5px;
 }
+
 .social-icons a {
-    color: rgba( 25, 7, 0, 1);
-    text-decoration: none;
+  color: rgba(25, 7, 0, 1);
+  text-decoration: none;
 }
+
 .fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: white;
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
 }
+
 .fa-facebook:hover {
-    background-color: #3d5b99;
-    color: white;
+  background-color: #3d5b99;
+  color: white;
 }
+
 .fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: white;
+  padding: 10px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
 }
+
 .fa-twitter:hover {
-    background-color: #00aced;
-    color: white;
+  background-color: #00aced;
+  color: white;
 }
+
 .fa-rss {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: white;
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
 }
+
 .fa-rss:hover {
-    background-color: #eb8231;
-    color: white;
+  background-color: #eb8231;
+  color: white;
 }
+
 .fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: white;
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
 }
+
 .fa-youtube:hover {
-    background-color: #e64a41;
-    color: white;
+  background-color: #e64a41;
+  color: white;
 }
+
 .fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: white;
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
 }
+
 .fa-linkedin:hover {
-    background-color: #0073a4;
-    color: white;
+  background-color: #0073a4;
+  color: white;
 }
+
 .fa-github {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: white;
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
 }
+
 .fa-github:hover {
-    background-color: #5a32a3;
-    color: white;
+  background-color: #5a32a3;
+  color: white;
 }
