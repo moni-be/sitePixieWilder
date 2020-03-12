@@ -124,6 +124,9 @@ figure .photo
     height: 300px;
 }
 
+.photogal:hover
+{filter: saturate(7);}}
+
 
 @media only screen and (min-width:360px)
 {
