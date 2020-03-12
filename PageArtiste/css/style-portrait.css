@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
 
-*,html,body,section,div,h1,h2,h3,h4,h5,h6,div,article,figure,figcaption
+*,html,body,section,div,h1,h2,h3,h4,h5,h6,div,article,figure,figcaption,a
 {padding-left: 0; margin: 0;}
 
 body
 {
     font-family: 'Raleway', sans-serif; 
     box-sizing: content-box;
-    color: #001118; 
+    color: #001118;
+    height: 100%;
 }
 
 .main{
@@ -88,6 +89,10 @@ figure .photo
 }
 
 .btn-contact{
+    text-decoration: none;
+}
+
+.btn-contact{
     display: block;
     margin: auto;
     background-color:#FC4C02;
@@ -125,11 +130,17 @@ figure .photo
 }
 
 .photogal:hover
-{filter: saturate(7);}}
+{filter: saturate(7);}
 
 
 @media only screen and (min-width:360px)
 {
+
+body{
+    display:flex;
+    flex-direction: column;
+    box-sizing: content-box;
+}
 
 .main{
     display: flex;
@@ -210,8 +221,9 @@ figure .photo
 }
 
  .galerie{
+
      flex-direction: column;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
      width: 80%;
     padding: 0;
