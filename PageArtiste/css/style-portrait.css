@@ -119,6 +119,11 @@ figure .photo
     padding-left: 1%;
 }
 
+.galerie img{
+    width: 350px;
+    height: 300px;
+}
+
 
 @media only screen and (min-width:360px)
 {
@@ -201,16 +206,18 @@ figure .photo
 
 }
 
-
-
-
  .galerie{
      flex-direction: column;
      justify-content: space-between;
      align-items: center;
      width: 80%;
-
+    padding: 0;
  }
+
+ .galerie img{
+    width: 300px;
+    height: 250px;
+}
 
  .photogal{
      width: 30%;
