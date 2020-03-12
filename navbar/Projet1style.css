@@ -4,7 +4,6 @@
 }
 
 html {
-  display: block;
   background-color: white;
 }
 
@@ -83,13 +82,3 @@ nav li {
     height:50px;
     margin-right: 20px;
   }
-
-  @media screen and (min-width: 700px) {
-    .accueil {
-      width: 100%;
-    }
-    img {
-      width: 100%;
-    }
-  }
-  
