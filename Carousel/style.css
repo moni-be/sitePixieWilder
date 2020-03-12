@@ -87,7 +87,6 @@ nav li {
   width: 100%;
   height: 100px;
   margin-top: -20px;
-  justify-content: space-around;
   display: flex;
 }
 
@@ -321,10 +320,6 @@ h2:hover{
                 -webkit-transform: rotate(360deg);
                         transform: rotate(360deg);
       }
-      footer{
-        flex-direction: column;
-      }
-      
     }
 
     @media screen and (min-width: 961px){
@@ -527,5 +522,11 @@ h2:hover{
     .fa-github:hover {
       background-color: #5a32a3;
       color: white;
+    }
+
+    @media screen and (max-width:600px){
+      footer{
+        flex-direction: column;
+      }
     }
     
