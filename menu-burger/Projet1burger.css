@@ -64,17 +64,31 @@ li {
   color: rgba(0, 142, 151, 1);
   text-align: center;
   text-decoration: none;
+}
 
+h2 {
+  padding: 20px;
+}
+
+h2,
+p {
+  font-size: 1.2em;
+}
+
+p {
+  margin-left: 20px;
+  color: #613e6e;
+}
 
 nav li {
-    padding: 10px;
-    margin: 10px;
-    font-size: 1.3em;
-    float: left;
-    justify-content: bottom;
-    white-space: nowrap;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.3em;
+  float: left;
+  justify-content: bottom;
+  white-space: nowrap;
 }
-  
+
 .navBar {
   list-style-type: none;
   overflow: hidden;
@@ -84,16 +98,9 @@ nav li {
   height: 100px;
   margin-top: -20px;
   justify-content: space-around;
-  display: flex;
-}
+    display: flex;
 
 
-h2, p {
-  font-size: 1.2em;
-}
-p {
-  margin-left: 20px;
-  color: #613e6e;
 }
 
 #linkNav {
@@ -385,60 +392,3 @@ ul{
   visibility: hidden; 
 }
 }
-
-nav {
-  background-color: rgba(248, 243, 235, 1); 
-}
-
-nav li {
-  display: inline;
-  padding: 10px;
-  margin: 10px;
-}
-.navBar {
-  list-style-type: none;
-  font-size: 1.6em;
-  text-shadow: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-
-.navLi:hover{
-  background-color: rgba(242, 242, 242, 1);
-  color: rgba(47, 47, 47, 1);
-  margin: 0px;
-}
-
-.AboutUs {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.social-icons {
-    text-align: left;
-    padding: 20px;
-    }  
-  .social-icons li {
-    display:inline-block;
-    list-style-type:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    }
-  .social-icons li a {
-    border-bottom: none;
-    }
-  .social-icons li img {
-    width:50px;
-    height:50px;
-    margin-right: 20px;
-  }
-
-  @media screen and (min-width: 700px) {
-    .accueil {
-      width: 100%;
-    }
-    img {
-      width: 100%;
-    }
-  }
-  
