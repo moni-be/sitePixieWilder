@@ -1,12 +1,17 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,500,700&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 * {
+=======
+*{
+>>>>>>> carousel
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
 .bg{visibility: hidden;}
 
 html {
@@ -64,19 +69,42 @@ li {
   color: rgba(0, 142, 151, 1);
   text-align: center;
   text-decoration: none;
+=======
+html {
+  display: block;
+  background-color: white;
+}
+
+body {
+  font-family: Arial;
+  background-color: white;
+}
+a {
+  color: rgba(243, 16, 110, 1);
+  margin-left: 20px;
+}
+a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(243, 16, 110, 1);
+>>>>>>> carousel
 }
 
 h2 {
   padding: 20px;
 }
 
+<<<<<<< HEAD
 h2,
 p {
+=======
+h2, p {
+>>>>>>> carousel
   font-size: 1.2em;
 }
 
 p {
   margin-left: 20px;
+<<<<<<< HEAD
   color: #613e6e;
 }
 
@@ -392,3 +420,67 @@ ul{
   visibility: hidden; 
 }
 }
+=======
+}
+
+nav {
+  background-color: rgba(248, 243, 235, 1); 
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+}
+.navBar {
+  list-style-type: none;
+  font-size: 1.6em;
+  text-shadow: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#SiteName {
+  font-size: 1.5em;
+  color: rgba(243, 16, 110, 1);  
+}
+
+.navLi:hover{
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(47, 47, 47, 1);
+  margin: 0px;
+}
+
+.AboutUs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.social-icons {
+    text-align: left;
+    padding: 20px;
+    }  
+  .social-icons li {
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    }
+  .social-icons li a {
+    border-bottom: none;
+    }
+  .social-icons li img {
+    width:50px;
+    height:50px;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 700px) {
+    .accueil {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  
+>>>>>>> carousel
