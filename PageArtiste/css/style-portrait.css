@@ -176,6 +176,9 @@ figure .photo
     margin-bottom: 30px;
 }
 
+figure img{
+    width: 100%;
+}
 
 .description
 {
@@ -208,6 +211,7 @@ figure .photo
 
 .listing ul li{
     width: 80%;
+    font-size: 1em;
 }
 
 .btn{
