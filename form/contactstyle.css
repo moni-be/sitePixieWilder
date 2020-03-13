@@ -51,6 +51,7 @@ nav ul li a {
 
 nav li {
   align-items: center;
+  list-style-type: none;
 }
 
 li {
