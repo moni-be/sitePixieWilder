@@ -57,8 +57,7 @@ nav ul li a {
 
 nav li {
   align-items: center;
-  list-style: none;
-  
+ list-style-type: none;
 }
 
 li {
@@ -254,11 +253,12 @@ nav li {
   background-size: cover;
   background-position: center;
   height: 100%;
+  justify-content: center;
 }
 
 .centered {
   padding-top: 9%;
-  text-align: left;
+  text-align: center;
 }
 
 .accueil h1 {
@@ -296,7 +296,6 @@ nav li {
 }
 
 #aboutLi {
-  margin-left: 3%;
   font-size: 1.2em;
   padding: 10px;
 }
@@ -305,6 +304,8 @@ nav li {
   margin-left: 10%;
   font-size: 1.5em;
   font-weight: bold;
+  color: #b37cb5;
+  margin-bottom: 135px;
 }
 
 footer {
@@ -464,6 +465,7 @@ footer a:hover {
 @media screen and (max-width: 920px) {
   .accueil h1 {
     font-size: 1.8em;
+   
   }
 
   #findyour {
@@ -480,6 +482,7 @@ footer a:hover {
   }
   .centered{
     height: 200px;
+    text-align:center;
   }
   .AboutUs{
     display:flex;

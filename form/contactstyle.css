@@ -38,7 +38,7 @@ nav ul li a {
 .navBox li a:hover {
   color: rgba(252, 76, 2, 1);
   /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(127, 198, 203, 1));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #b37cb5);
   border-radius: 10px;
   padding-top: 10px;
   padding-left: 10px;
@@ -62,15 +62,13 @@ li {
 
 h2 {
   padding: 20px;
-}
-
-h2,
-p {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 p {
   margin-left: 20px;
+  color: #613e6e;
+  font-size: 1.2em;
 }
 
 nav li {
@@ -96,6 +94,7 @@ nav li {
 #linkNav {
   margin-top: 40px;
 }
+
 
 @media screen and (max-width: 920px) {
   .navBox {
@@ -212,10 +211,6 @@ nav li {
   }
 }
 
-main {
-  margin-top: 150px;
-
-}
 
 h1 {
   font-size: xx-large;
@@ -224,7 +219,6 @@ h1 {
   text-align: center;
 
 }
-
 
 .form {
   display: flex;
