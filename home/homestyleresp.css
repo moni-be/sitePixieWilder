@@ -33,6 +33,9 @@ header {
 .logo {
   width: 200px;
 }
+header a .logo-bg{
+  visibility: hidden;
+}
 
 nav ul li a {
   z-index: 1;
@@ -54,7 +57,7 @@ nav ul li a {
 
 nav li {
   align-items: center;
-  list-style-type: none;
+ list-style-type: none;
 }
 
 li {
