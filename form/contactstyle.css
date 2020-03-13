@@ -27,6 +27,9 @@ header {
 .logo {
   width: 200px;
 }
+header a .logo-bg{
+  visibility: hidden;
+}
 
 nav ul li a {
   z-index: 1;
@@ -112,6 +115,15 @@ nav li {
   #homeImg {
     margin-top: 60px;
   }
+  .navBox .nav-position .logo-bg{
+    position: absolute;
+    left: 30px;
+    top:15px;
+    width: 100px;
+    z-index: 1000;
+    visibility: visible;
+    display: block;
+   }
 
   .bg input + label {
     position: fixed;
@@ -121,6 +133,7 @@ nav li {
     width: 15px;
     z-index: 5;
   }
+  
   .bg input + label span {
     position: absolute;
     width: 100%;
@@ -130,8 +143,9 @@ nav li {
     left: 0;
     display: block;
     transition: 0.1s;
-    background-color: darkblue;
+    background-color:#FC4C02;
   }
+
   .bg input + label span:first-child {
     top: 4px;
   }
@@ -176,18 +190,20 @@ nav li {
     transition: 0.1s;
     transition-delay: 0s;
   }
+
   .bg input ~ nav > ul > li > a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     font-family: sans-serif;
     display: block;
-    padding: 30px;
-    font-family: "Bellota Text";
+    padding: 50px;
+    font-family: 'Raleway', sans-serif;
     color: #008e97;
     padding: 0;
     font-size: 0.7em;
   }
+
   .bg input:checked ~ nav {
     height: 60%;
     transition-delay: 0s;
