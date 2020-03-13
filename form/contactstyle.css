@@ -353,7 +353,7 @@ footer a:hover {
 
 .footer-social-icons {
   width: 60%;
-  margin-left:5%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
   align-items: baseline;
