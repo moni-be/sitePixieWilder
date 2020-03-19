@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
  */
-*,html,body,section,div,h1,h2,h3,h4,h5,h6,div,article,figure,figcaption,a
+*,html,body,section,div,h1,h2,h3,h4,h5,h6,div,article,figure,figcaption,a,main
 {padding-left: 0; margin: 0;}
 
 body
@@ -22,56 +22,59 @@ body
 
 .portrait{
     width: 100%;
-    margin: auto;
+    margin: 100%;
     padding: 0; 
     text-align: center;
+    
 }
 
 .portrait article figure{
-    width: 50%;
+    display: no-flex;
+    width: 90%;
     margin: auto;
 }
 
-
 figure .photo
 {
-    margin-top: 10%;
-    width: 20%
+    width: 70%;
+    padding-bottom: 20px;
 }
 
 .description
 {
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
-    font-size: 1.2em;
-
+    font-size: 1.5em;
 }
 
 .prestation_title{
-    padding-bottom: 40px;
+    margin: 100px 80px 5px 80px;
     clear: both;
     text-align: center;
     color: #008E97;
     font-size: 1.5em;
     text-transform: uppercase;
 }
+
 .presta{
     width: 80%;
     margin: auto;
-    padding-top:30px;
+    padding-top: 40px;
     padding-bottom: 10px;
     background-color: #cce8ea;
     height: auto;
+    color: #001118;
 }
 
 .listing{
-    width: 15%;
-    display: block;
+    width: 40%;
+    display: inline-block;
+    height: auto;
+    padding-left: 10%;
 }
 
 .listing ul{
-    padding-left: 10%;
-
+    width: 90%;
 }
 
 .listing ul li{
@@ -171,8 +174,8 @@ body{
 
 figure .photo
 {
-    width: 70%;
-    margin-top: 120px;
+
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -197,20 +200,28 @@ figure img{
     width: 95%;
     flex-direction: row;
     justify-content: space-around;
+}
 
+.prestation_title{
+    margin-top: 40px;
 }
 
 .listing{
     display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 .listing ul{
-    padding:5px;
-
+    width: 90%;
+    padding-left: 1px;
 }
 
 .listing ul li{
-    width: 70%;
+    width: 90%;
     font-size: 1em;
 }
 
@@ -243,6 +254,18 @@ figure img{
      width: 30%;
  }
 
- 
+   .dark{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
 
+   }
+   .dark label,input{
+       margin-top: 50px;
+       margin-right: 0;
+       text-align: right;
+   }
+ 
 }

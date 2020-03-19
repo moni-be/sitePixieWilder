@@ -1,0 +1,99 @@
+.modal{
+  font-family: 'Raleway', sans-serif;
+}
+
+.modal .modal-trigger{
+  font-size: .7em;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+}
+.modal .fa-envelope {
+  content: "\f0e0";
+  font-size: 1.5em;
+}
+
+.modal .modal-trigger:hover{
+  color: rgba(252, 76, 2, 1);
+}
+
+.modal-trigger {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .modal[open] > .modal-trigger::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    cursor: default;
+    content: '';
+    z-index: 99;
+    background: rgba(27,31,35,0.5);
+  }
+  
+  .modal-content {
+    width: 30%;
+    position: fixed;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 999;
+    font-size: 1em;
+    animation-name: fadein;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255,1);
+    font-family: 'Raleway', sans-serif;
+    padding: 30px;
+  }
+
+  .modal-content label,input,.btn-modal{
+    display: block;
+    font-weight: 400;
+    padding: 3px;
+    text-align: left;
+  }
+
+  .modal-content input{
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  
+  .modal-content .btn-modal{
+    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(252, 76, 2, 1);
+    color:#001118;
+
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 50px;
+  }
+  
+  .modal-content .btn-modal:hover{
+    background-color:#001118;
+    color:#fff;
+    font-weight: 700;
+  } 
+  
+  
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+  
+  .modal-trigger::-webkit-details-marker {
+    display:none;
+  }
+  

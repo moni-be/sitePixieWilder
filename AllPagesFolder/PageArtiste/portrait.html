@@ -7,6 +7,7 @@
     <title>Portrait d'artiste</title>
     <link rel="stylesheet" href="css/style-portrait.css">
     <link rel='stylesheet' href='css/Projet1style.css' />
+    <link rel="stylesheet" href="css/dark_mode.css">
 </head>
 <body>
 
@@ -67,11 +68,23 @@
     </div>
   </header>
     <main class="main">
+      <section class="dark">
+          <label for="toggler">Enable dark mode</label>
+          <input id="toggler" type="checkbox">
+      </section>
         <section class="portrait">
             <article class="art">
                 <figure class="fiche">
                     <img src="img/artiste2.jpg" alt="artiste" class="photo">
-                    <figcaption class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime autem laboriosam tempore, dolore omnis nesciunt asperiores ad, error debitis</figcaption>
+                    <figcaption class="description">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                      Maxime autem laboriosam tempore, dolore omnis nesciunt 
+                      asperiores ad, error debitis.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                      Neque voluptatem fuga consequatur, voluptas voluptatibus 
+                      maiores cum inventore iste provident mollitia quasi voluptates, 
+                      sit laborum nesciunt odit reprehenderit quae ipsam aut.
+                    </figcaption>
                 </figure>
             </article>
         </section>
@@ -137,5 +150,7 @@
         </div>
     </footer>
     </main>
+
+    <script src="js/mon_script.js"></script>
 </body>
 </html>

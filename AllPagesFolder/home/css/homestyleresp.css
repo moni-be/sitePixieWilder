@@ -44,16 +44,25 @@ nav ul li a {
   margin: 0 10px;
 }
 
-.navBox li a:hover {
+.navBar ul {
+  width: 100%;
+}
+
+.navBox li a{
   color: rgba(252, 76, 2, 1);
-  /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #b37cb5);
-  border-radius: 10px;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
+
+.navBox li a:hover {
+  color: rgba(252, 76, 2, 1);
+  /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #b37cb5);
+  border-radius: 10px;
+}
+
 
 nav li {
   align-items: center;
@@ -104,6 +113,10 @@ nav li {
 #linkNav {
   margin-top: 40px;
 }
+
+
+
+
 
 @media screen and (max-width: 920px) {
   body{
@@ -240,7 +253,6 @@ nav li {
 
   ul {
     list-style-type: none;
-    /*white-space: nowrap;*/
   }
 
   #burger {
