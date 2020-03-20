@@ -65,7 +65,7 @@ figure .photo
     background-color: #cce8ea;
     height: auto;
     color: #001118;
-    z-index: 2;
+    z-index: 1;
 }
 
 .listing{

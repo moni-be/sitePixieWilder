@@ -14,87 +14,82 @@
 <body>
     <header>
         <div class="bg">
-            <div class="logo"></div>
-            <input id="burger" type="checkbox" />
-
-            <label for="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <div class="background"></div>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html" style="text-decoration:none">Home</a></li>
-                    <li><a href="ourartists.html" style="text-decoration:none">Discover Artists</a></li>
-                    <li><a href="portrait.html" style="text-decoration:none">Artists Page</a></li>
-                    <li><a href="contact.html" style="text-decoration:none">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="navBox">
-            <nav>
-                <div class="nav-position">
-                    <ul> 
-                        <li><a href="index.html">
-                          <img src="assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
-                        </a>
+          <div class="logo"></div>
+          <input id="burger" type="checkbox" />
+          <label for="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </label>
+          <div class="background"></div>
+          <nav>
+              <ul>
+                  <li><a href="index.html" style="text-decoration:none">Home</a></li>
+                  <li><a href="ourartists.html" style="text-decoration:none">Discover Artists</a></li>
+                  <li><a href="portrait.html" style="text-decoration:none">Artists Page</a></li>
+                  <li><a href="contact.html" style="text-decoration:none">Contact Us</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="navBox">
+          <nav>
+              <div class="nav-position">
+                  <ul> 
+                      <li><a href="index.html">
+                        <img src="assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
+                      </a>
+                    </li>
+                      <li>
+                          <details class="modal">
+                          <summary class="modal-trigger">Inscription<br> 
+                          <i class="fa fa-envelope"></i></summary>
+                          <form action="index.html" class="modal-content">
+                              <label>Votre prénom</label>
+                              <input type="text" name="fistname" placeholder="Nom" required>
+                              <label>Votre nom</label>
+                              <input type="text" name="lastname" placeholder="Prénom" required>
+                              <label>Votre email</label>
+                              <input type="text" name="email" placeholder="email" required>                                    
+                              <input type="submit" value="M'inscrire" class="btn-modal">
+                          </form>                    
                       </li>
-                        <li>
-                            <details class="modal">
-                            <summary class="modal-trigger">Inscription<br> 
-                            <i class="fa fa-envelope"></i></summary>
-                            <form action="index.html" class="modal-content">
-                                <label>Votre prénom</label>
-                                <input type="text" name="fistname" placeholder="Nom" required>
-                                <label>Votre nom</label>
-                                <input type="text" name="lastname" placeholder="Prénom" required>
-                                <label>Votre email</label>
-                                <input type="text" name="email" placeholder="email" required>                                    
-                                <input type="submit" value="M'inscrire" class="btn-modal">
-                            </form>
-                            
-                        </li>
-                    </ul>
-                    
-                    <ul class="navBar">
-                        <li>
-                            <img src="assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo" />
-                        </li>
-                        <li id="linkNav">
-                            <a href="index.html" style="text-decoration:none">Home</a>
-                        </li>
-                        <li id="linkNav">
-                            <a href="ourartists.html" style="text-decoration:none">Discover Artists</a>
-                        </li>
-                        <li id="linkNav">
-                            <a href="portrait.html" style="text-decoration:none">Artist Page</a>
-                        </li>
-                        <li id="linkNav">
-                            <a href="contact.html" style="text-decoration:none">Contact Us</a>
-                        </li>
-                        <li>
-                            <details class="modal">
-                            <summary class="modal-trigger">Inscription<br> 
-                                <i class="fa fa-envelope"></i></summary>
-                                <form action="index.html" class="modal-content">
-                                    <label>Votre prénom</label>
-                                    <input type="text" name="fistname" placeholder="Nom" required>
-                                    <label>Votre nom</label>
-                                    <input type="text" name="lastname" placeholder="Prénom" required>
-                                    <label>Votre email</label>
-                                    <input type="text" name="email" placeholder="email" required>                                    
-                                    <input type="submit" value="M'inscrire" class="btn-modal">
-                                </form>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                  </ul>            
+                  <ul class="navBar">
+                      <li>
+                          <img src="assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo" />
+                      </li>
+                      <li id="linkNav">
+                          <a href="index.html" style="text-decoration:none">Home</a>
+                      </li>
+                      <li id="linkNav">
+                          <a href="ourartists.html" style="text-decoration:none">Discover Artists</a>
+                      </li>
+                      <li id="linkNav">
+                          <a href="portrait.html" style="text-decoration:none">Artist Page</a>
+                      </li>
+                      <li id="linkNav">
+                          <a href="contact.html" style="text-decoration:none">Contact Us</a>
+                      </li>
+                      <li>
+                          <details class="modal">
+                              <summary class="modal-trigger">Inscription<br> 
+                              <i class="fa fa-envelope"></i></summary>
+                              <form action="index.html" class="modal-content">
+                                  <label>Votre prénom</label>
+                                  <input type="text" name="fistname" placeholder="Nom" required>
+                                  <label>Votre nom</label>
+                                  <input type="text" name="lastname" placeholder="Prénom" required>
+                                  <label>Votre email</label>
+                                  <input type="text" name="email" placeholder="email" required>                                    
+                                  <input type="submit" value="M'inscrire" class="btn-modal">
+                              </form>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </header>
 
-        </div>
-
-    </header>
     <section class="accueil">
         <div class="centered">
             <h1>Welcome to Pixie Wilders </h1>

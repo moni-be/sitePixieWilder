@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="AnaïsAlfonsi,VeronicaPattou,CelineCottier,TristanManaut,NicolasRegnier,MamedGohabur">
     <title>Portrait d'artiste</title>
-    <link rel="stylesheet" href="css/style-portrait.css">
     <link rel='stylesheet' href='css/index-style.css' />
-    <link rel="stylesheet" href="css/dark_mode.css">
+     <link rel="stylesheet" href="css/style-portrait.css">   
+    <link rel="stylesheet" href="css/dark_mode.css"> 
     <link rel="stylesheet" href="css/modal-galerie.css">
-<!--     <link rel="stylesheet" href="css/modal.css"> -->
+    <link rel="stylesheet" href="css/modal.css">      
+
 </head>
 <body>
 
@@ -17,14 +18,12 @@
   <div class="bg">
     <div class="logo"></div>
     <input id="burger" type="checkbox" />
-
     <label for="burger">
         <span></span>
         <span></span>
         <span></span>
     </label>
     <div class="background"></div>
-
     <nav>
         <ul>
             <li><a href="index.html" style="text-decoration:none">Home</a></li>
@@ -38,7 +37,7 @@
     <nav>
         <div class="nav-position">
             <ul> 
-                <li><a href="homeresp.html">
+                <li><a href="index.html">
                   <img src="assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
                 </a>
               </li>
@@ -56,8 +55,7 @@
                         <input type="submit" value="M'inscrire" class="btn-modal">
                     </form>                    
                 </li>
-            </ul>
-            
+            </ul>            
             <ul class="navBar">
                 <li>
                     <img src="assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo" />
@@ -76,7 +74,7 @@
                 </li>
                 <li>
                     <details class="modal">
-                    <summary class="modal-trigger">Inscription<br> 
+                        <summary class="modal-trigger">Inscription<br> 
                         <i class="fa fa-envelope"></i></summary>
                         <form action="index.html" class="modal-content">
                             <label>Votre prénom</label>
@@ -87,13 +85,13 @@
                             <input type="text" name="email" placeholder="email" required>                                    
                             <input type="submit" value="M'inscrire" class="btn-modal">
                         </form>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-</div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
+
   <main class="main">
       <section class="dark">
           <label for="toggler">Enable dark mode</label>
@@ -119,42 +117,42 @@
         <h2 class="prestation_title">Nos Prestations</h2>   
         <section class="presta"> 
         <div class="listing">
-              <ul>                
-                  <details class="modal">
-                  <summary class="modal-trigger"><li>Mariages</li></summary>
-                  <img src="img/galerie/weeding.webp" class="modal-content">
-                  </details>
-                  <details class="modal">
-                    <summary class="modal-trigger"><li>Baptémes</li></summary>                                                   
-                    <img src="img/galerie/bapteme.jpg" class="modal-content">
-                  </details>
-                  <details class="modal">
+            <ul>                
+                <details class="galerie-modal">
                     <summary class="modal-trigger"><li>Mariages</li></summary>
                     <img src="img/galerie/weeding.webp" class="modal-content">
-                  </details>
-                  <details class="modal">
+                </details>
+                <details class="galerie-modal">
+                    <summary class="modal-trigger"><li>Baptémes</li></summary>                                                   
+                    <img src="img/galerie/bapteme.jpg" class="modal-content">
+                </details>
+                <details class="galerie-modal">
+                    <summary class="modal-trigger"><li>Mariages</li></summary>
+                    <img src="img/galerie/weeding.webp" class="modal-content">
+                </details>
+                <details class="galerie-modal">
                     <summary class="modal-trigger"><li>Anniversaires</li></summary>                                                   
                     <img src="img/galerie/bapteme.jpg" class="modal-content">
-                  </details>
-              </ul>
+                </details>
+            </ul>
         </div>
         <div class="listing">
           <ul>
-            <details class="modal">
+            <details class="galerie-modal">
               <summary class="modal-trigger"><li>Evenementiel</li></summary>
               <img src="img/galerie/weeding.webp" class="modal-content">
             </details>
-            <details class="modal">
+            <details class="galerie-modal">
               <summary class="modal-trigger"><li>Conférences</li></summary>                                                   
               <img src="img/galerie/bapteme.jpg" class="modal-content">
             </details>
-            <details class="modal">
+            <details class="galerie-modal">
               <summary class="modal-trigger"><li>Kick off</li></summary>                                                   
               <img src="img/galerie/bapteme.jpg" class="modal-content">
             </details>                                                                                                                                          
           </ul>
         </div>
-  <!--          <div class="listing">
+        <!-- <div class="listing">
                 <ul>
                     <li>Evenementiel</li>
                     <li>Conférences</li>
