@@ -1,0 +1,35 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+  }
+  
+  [data-theme="dark"] {
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+    /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+    --background-color: black;
+    --text-color: white;
+  }
+  
+  body, .prestation_title{
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .dark{
+    position: sticky;
+    width: 100%;
+    margin-top: 8%;
+    text-align: right;
+    margin-right: 50%;
+
+  }
+  .dark label{
+    padding-right: 10px;
+}
+
+
+
+
+
+  
