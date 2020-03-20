@@ -5,117 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="AnaïsAlfonsi,VeronicaPattou,CelineCottier,TristanManaut,NicolasRegnier,MamedGohabur">
     <title>Portrait d'artiste</title>
-    <!-- <link rel="stylesheet" href="css/style-portrait.css">
-    <link rel='stylesheet' href='css/Projet1style.css' /> -->
-    <link rel="stylesheet" href="/AllPagesFolder/PageArtiste/css/style-portrait.css">
-    <link rel="stylesheet" href="/AllPagesFolder/PageArtiste/css/Projet1style.css">
+    <link rel="stylesheet" href="css/style-portrait.css">
+    <link rel='stylesheet' href='css/homestyleresp.css' />
+    <link rel="stylesheet" href="css/dark_mode.css">
+    <link rel="stylesheet" href="css/modal-galerie.css">
+<!--     <link rel="stylesheet" href="css/modal.css"> -->
 </head>
 <body>
 
 <header>
-    <div class="bg">
-      <div class="logo"></div>
-      <input id="burger" type="checkbox" />
-      <label for="burger">
+  <div class="bg">
+    <div class="logo"></div>
+    <input id="burger" type="checkbox" />
+
+    <label for="burger">
         <span></span>
         <span></span>
         <span></span>
-      </label>
-      <div class="background"></div>
-      <nav>
+    </label>
+    <div class="background"></div>
+
+    <nav>
         <ul>
-          <li><a href="/AllPagesFolder/home/homeresp.html" style="text-decoration:none">Home</a></li>
-          <li>
-            <a href="/AllPagesFolder/Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a>
-          </li>
-          <li><a href="/AllPagesFolder/PageArtiste/portrait.html" style="text-decoration:none">Artists Page</a></li>
-          <li><a href="/AllPagesFolder/form/contact.html" style="text-decoration:none">Contact Us</a></li>
+            <li><a href="../home/homeresp.html" style="text-decoration:none">Home</a></li>
+            <li><a href="../Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a></li>
+            <li><a href="../PageArtiste/portrait.html" style="text-decoration:none">Artists Page</a></li>
+            <li><a href="../form/contact.html" style="text-decoration:none">Contact Us</a></li>
         </ul>
-      </nav>
-    </div>
-
-
-    <div class="navBox">
-      <nav>
+    </nav>
+</div>
+<div class="navBox">
+    <nav>
         <div class="nav-position">
-          <ul>
-            <li><a href="/AllPagesFolder/home/homeresp.html">
-              <img src="/AllPagesFolder/assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
-            </a>
-          </li>
-        </ul>
-          <ul class="navBar">
+            <ul> 
+                <li><a href="../home/homeresp.html">
+                  <img src="../assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
+                </a>
+              </li>
+                <li>
+                    <details class="modal">
+                    <summary class="modal-trigger">Inscription<br> 
+                    <i class="fa fa-envelope"></i></summary>
+                    <form action="index.html" class="modal-content">
+                        <label>Votre prénom</label>
+                        <input type="text" name="fistname" placeholder="Nom" required>
+                        <label>Votre nom</label>
+                        <input type="text" name="lastname" placeholder="Prénom" required>
+                        <label>Votre email</label>
+                        <input type="text" name="email" placeholder="email" required>                                    
+                        <input type="submit" value="M'inscrire" class="btn-modal">
+                    </form>                    
+                </li>
+            </ul>
             
-              <a href="/AllPagesFolder/home/homeresp.html">
-                <img src="/AllPagesFolder/assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo"/>
-              </a>
-           
-            <li id="linkNav">
-              <a href="/AllPagesFolder/home/homeresp.html" style="text-decoration:none">Home</a>
-            </li>
-            <li id="linkNav">
-              <a href="/AllPagesFolder/Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a
-              >
-            </li>
-            <li id="linkNav">
-              <a href="/AllPagesFolder/PageArtiste/portrait.html" style="text-decoration:none">Artist Page</a>
-            </li>
-            <li id="linkNav">
-              <a href="/AllPagesFolder/form/contact.html" style="text-decoration:none">Contact Us</a>
-            </li>
-          </ul>
+            <ul class="navBar">
+                <li>
+                    <img src="../assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo" />
+                </li>
+                <li id="linkNav">
+                    <a href="../home/homeresp.html" style="text-decoration:none">Home</a>
+                </li>
+                <li id="linkNav">
+                    <a href="../Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a>
+                </li>
+                <li id="linkNav">
+                    <a href="../PageArtiste/portrait.html" style="text-decoration:none">Artist Page</a>
+                </li>
+                <li id="linkNav">
+                    <a href="../form/contact.html" style="text-decoration:none">Contact Us</a>
+                </li>
+                <li>
+                    <details class="modal">
+                    <summary class="modal-trigger">Inscription<br> 
+                        <i class="fa fa-envelope"></i></summary>
+                        <form action="index.html" class="modal-content">
+                            <label>Votre prénom</label>
+                            <input type="text" name="fistname" placeholder="Nom" required>
+                            <label>Votre nom</label>
+                            <input type="text" name="lastname" placeholder="Prénom" required>
+                            <label>Votre email</label>
+                            <input type="text" name="email" placeholder="email" required>                                    
+                            <input type="submit" value="M'inscrire" class="btn-modal">
+                        </form>
+                </li>
+            </ul>
         </div>
-      </nav>
-    </div>
-  </header>
-    <main class="main">
+    </nav>
+
+</div>
+</header>
+  <main class="main">
+      <section class="dark">
+          <label for="toggler">Enable dark mode</label>
+          <input id="toggler" type="checkbox">
+      </section>
         <section class="portrait">
             <article class="art">
                 <figure class="fiche">
-                    <img src="/AllPagesFolder/PageArtiste/img/artiste2.jpg" alt="artiste" class="photo">
-                    <figcaption class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime autem laboriosam tempore, dolore omnis nesciunt asperiores ad, error debitis</figcaption>
+                    <img src="img/artiste2.jpg" alt="artiste" class="photo">
+                    <figcaption class="description">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                      Maxime autem laboriosam tempore, dolore omnis nesciunt 
+                      asperiores ad, error debitis.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                      Neque voluptatem fuga consequatur, voluptas voluptatibus 
+                      maiores cum inventore iste provident mollitia quasi voluptates, 
+                      sit laborum nesciunt odit reprehenderit quae ipsam aut.
+                    </figcaption>
                 </figure>
             </article>
         </section>
-
-        <h2 class="prestation_title">Prestations</h2>   
-    <section class="presta">        
-            <div class="listing">
-                <ul>
-                    <li>Mariages</li>
-                    <li>Baptémes</li>
-                    <li>Anniversaires</li>
-                </ul>
-            </div>
-            <div class="listing">
+        
+        <h2 class="prestation_title">Nos Prestations</h2>   
+        <section class="presta"> 
+        <div class="listing">
+              <ul>                
+                  <details class="modal">
+                  <summary class="modal-trigger"><li>Mariages</li></summary>
+                  <img src="img/galerie/weeding.webp" class="modal-content">
+                  </details>
+                  <details class="modal">
+                    <summary class="modal-trigger"><li>Baptémes</li></summary>                                                   
+                    <img src="img/galerie/bapteme.jpg" class="modal-content">
+                  </details>
+                  <details class="modal">
+                    <summary class="modal-trigger"><li>Mariages</li></summary>
+                    <img src="img/galerie/weeding.webp" class="modal-content">
+                  </details>
+                  <details class="modal">
+                    <summary class="modal-trigger"><li>Anniversaires</li></summary>                                                   
+                    <img src="img/galerie/bapteme.jpg" class="modal-content">
+                  </details>
+              </ul>
+        </div>
+        <div class="listing">
+          <ul>
+            <details class="modal">
+              <summary class="modal-trigger"><li>Evenementiel</li></summary>
+              <img src="img/galerie/weeding.webp" class="modal-content">
+            </details>
+            <details class="modal">
+              <summary class="modal-trigger"><li>Conférences</li></summary>                                                   
+              <img src="img/galerie/bapteme.jpg" class="modal-content">
+            </details>
+            <details class="modal">
+              <summary class="modal-trigger"><li>Kick off</li></summary>                                                   
+              <img src="img/galerie/bapteme.jpg" class="modal-content">
+            </details>                                                                                                                                          
+          </ul>
+        </div>
+  <!--          <div class="listing">
                 <ul>
                     <li>Evenementiel</li>
                     <li>Conférences</li>
                     <li>Kick off</li>
                 </ul>
-            </div>
-
-        </section> 
+            </div> -->
+      </section> 
             <div class="btn">
-                <button class="btn-contact"><a href="/AllPagesFolder/form/contact.html">Contactez-moi !</a></button>
+                <button class="btn-contact"><a href="../form/contact.html">Contactez-moi !</a></button>
             </div> 
         <section class="galerie">
             <div>
-                <a href="/AllPagesFolder/PageArtiste/img/street-art/street-mickey.jpeg" target="_blank">
+             <a href="img/street-art/street-mickey.jpeg" target="_blank">
                     <img src="img/street-art/street-mickey.jpeg" alt=""  class="photogal">
-                </a>
-                <a href="/AllPagesFolder/PageArtiste/img/street-art/spiderman.jpg" target="_blank" >
+                </a> 
+                <a href="img/street-art/spiderman.jpg" target="_blank" >
                     <img src="img/street-art/spiderman.jpg" alt="" class="photogal">
                 </a>
-                <a href="/AllPagesFolder/PageArtiste/img/street-art/wall.jpg" target="_blank">
+                <a href="img/street-art/wall.jpg" target="_blank">
                     <img src="img/street-art/wall.jpg" alt="" class="photogal">
                 </a>
-                <a href="/AllPagesFolder/PageArtiste/img/street-art/peace.jpg" target="_blank">
+                <a href="img/street-art/peace.jpg" target="_blank">
                     <img src="img/street-art/peace.jpg" alt="" class="photogal">
 
                 </a>
-                <a href="/AllPagesFolder/PageArtiste/img/street-art/c3po.jpg" target="_blank">
-                    <img src="/AllPagesFolder/PageArtiste/img/street-art/c3po.jpg" alt="" class="photogal">
+                <a href="img/street-art/c3po.jpg" target="_blank">
+                    <img src="img/street-art/c3po.jpg" alt="" class="photogal">
                 </a>         
             </div>
         </section>
@@ -139,5 +205,13 @@
         </div>
     </footer>
     </main>
+
+    <script src="js/mon_script.js"></script>
+<!--     <script>
+      let tigger = document.getElementById("tigger");
+      tigger.onclick = function maModal(){
+        this.style.color='#cce8ea'
+      }
+    </script> -->
 </body>
 </html>
