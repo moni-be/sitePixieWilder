@@ -9,64 +9,92 @@
     <link rel='stylesheet' href='css/homestyleresp.css' />
     <link rel="stylesheet" href="css/dark_mode.css">
     <link rel="stylesheet" href="css/modal-galerie.css">
+<!--     <link rel="stylesheet" href="css/modal.css"> -->
 </head>
 <body>
 
 <header>
-    <div class="bg">
-      <div class="logo"></div>
-      <input id="burger" type="checkbox" />
-      <label for="burger">
+  <div class="bg">
+    <div class="logo"></div>
+    <input id="burger" type="checkbox" />
+
+    <label for="burger">
         <span></span>
         <span></span>
         <span></span>
-      </label>
-      <div class="background"></div>
-      <nav>
+    </label>
+    <div class="background"></div>
+
+    <nav>
         <ul>
             <li><a href="../home/homeresp.html" style="text-decoration:none">Home</a></li>
             <li><a href="../Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a></li>
-            <li><a href="/portrait.html" style="text-decoration:none">Artists Page</a></li>
+            <li><a href="../PageArtiste/portrait.html" style="text-decoration:none">Artists Page</a></li>
             <li><a href="../form/contact.html" style="text-decoration:none">Contact Us</a></li>
         </ul>
     </nav>
-    </div>
-
-
-    <div class="navBox">
-      <nav>
+</div>
+<div class="navBox">
+    <nav>
         <div class="nav-position">
-          <ul>
-            <li><a href="../home/homeresp.html">
-              <img src="img/logo/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
-            </a>
-          </li>
-        </ul>
-          <ul class="navBar">
+            <ul> 
+                <li><a href="../home/homeresp.html">
+                  <img src="../assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
+                </a>
+              </li>
+                <li>
+                    <details class="modal">
+                    <summary class="modal-trigger">Inscription<br> 
+                    <i class="fa fa-envelope"></i></summary>
+                    <form action="index.html" class="modal-content">
+                        <label>Votre prénom</label>
+                        <input type="text" name="fistname" placeholder="Nom" required>
+                        <label>Votre nom</label>
+                        <input type="text" name="lastname" placeholder="Prénom" required>
+                        <label>Votre email</label>
+                        <input type="text" name="email" placeholder="email" required>                                    
+                        <input type="submit" value="M'inscrire" class="btn-modal">
+                    </form>                    
+                </li>
+            </ul>
             
-              <a href="../home/home.html">
-                <img src="img/logo/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo"/>
-              </a>
-           
-            <li id="linkNav">
-              <a href="../home/home.html" style="text-decoration:none">Home</a>
-            </li>
-            <li id="linkNav">
-              <a href="../Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a
-              >
-            </li>
-            <li id="linkNav">
-              <a href="portrait.html" style="text-decoration:none">Artist Page</a>
-            </li>
-            <li id="linkNav">
-              <a href="../form/contact.html" style="text-decoration:none">Contact Us</a>
-            </li>
-          </ul>
+            <ul class="navBar">
+                <li>
+                    <img src="../assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo" />
+                </li>
+                <li id="linkNav">
+                    <a href="../home/homeresp.html" style="text-decoration:none">Home</a>
+                </li>
+                <li id="linkNav">
+                    <a href="../Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a>
+                </li>
+                <li id="linkNav">
+                    <a href="../PageArtiste/portrait.html" style="text-decoration:none">Artist Page</a>
+                </li>
+                <li id="linkNav">
+                    <a href="../form/contact.html" style="text-decoration:none">Contact Us</a>
+                </li>
+                <li>
+                    <details class="modal">
+                    <summary class="modal-trigger">Inscription<br> 
+                        <i class="fa fa-envelope"></i></summary>
+                        <form action="index.html" class="modal-content">
+                            <label>Votre prénom</label>
+                            <input type="text" name="fistname" placeholder="Nom" required>
+                            <label>Votre nom</label>
+                            <input type="text" name="lastname" placeholder="Prénom" required>
+                            <label>Votre email</label>
+                            <input type="text" name="email" placeholder="email" required>                                    
+                            <input type="submit" value="M'inscrire" class="btn-modal">
+                        </form>
+                </li>
+            </ul>
         </div>
-      </nav>
-    </div>
-  </header>
-    <main class="main">
+    </nav>
+
+</div>
+</header>
+  <main class="main">
       <section class="dark">
           <label for="toggler">Enable dark mode</label>
           <input id="toggler" type="checkbox">
@@ -90,7 +118,6 @@
         
         <h2 class="prestation_title">Nos Prestations</h2>   
         <section class="presta"> 
-
         <div class="listing">
               <ul>                
                   <details class="modal">

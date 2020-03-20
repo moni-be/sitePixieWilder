@@ -24,6 +24,7 @@ body
     width: 100%;
     margin: 100%;
     padding: 0; 
+    margin: 0;
     text-align: center;
     
 }
@@ -264,7 +265,6 @@ figure img{
 
    }
    .dark label,input{
-       margin-top: 50px;
        margin-right: 0;
        text-align: right;
    }

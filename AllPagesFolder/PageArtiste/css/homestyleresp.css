@@ -32,8 +32,16 @@ header {
 
 .logo {
   width: 200px;
+  position: relative;
+  left: 40px;
+  padding-right:5px;
 }
+
 header a .logo-bg{
+  visibility: hidden;
+}
+
+.bg {
   visibility: hidden;
 }
 
@@ -46,6 +54,7 @@ nav ul li a {
 
 .navBar ul {
   width: 100%;
+  margin: 0;
 }
 
 .navBox li a{
@@ -135,10 +144,10 @@ nav li {
     height: 60px;
   }
 
-  #homeImg {
+/*   #homeImg {
     margin-top: 60px;
   }
-
+ */
   .navBox .nav-position .logo-bg{
     position: absolute;
     left: 30px;
