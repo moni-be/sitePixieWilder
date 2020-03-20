@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style-portrait.css">
     <link rel='stylesheet' href='css/Projet1style.css' />
     <link rel="stylesheet" href="css/dark_mode.css">
+    <link rel="stylesheet" href="css/modal-galerie.css">
 </head>
 <body>
 
@@ -88,33 +89,62 @@
                 </figure>
             </article>
         </section>
+        
+        <h2 class="prestation_title">Nos Prestations</h2>   
+        <section class="presta"> 
 
-        <h2 class="prestation_title">Prestations</h2>   
-    <section class="presta">        
-            <div class="listing">
-                <ul>
-                    <li>Mariages</li>
-                    <li>Baptémes</li>
-                    <li>Anniversaires</li>
-                </ul>
-            </div>
-            <div class="listing">
+        <div class="listing">
+              <ul>                
+                  <details class="modal">
+                  <summary class="modal-trigger"><li>Mariages</li></summary>
+                  <img src="img/galerie/weeding.webp" class="modal-content">
+                  </details>
+                  <details class="modal">
+                    <summary class="modal-trigger"><li>Baptémes</li></summary>                                                   
+                    <img src="img/galerie/bapteme.jpg" class="modal-content">
+                  </details>
+                  <details class="modal">
+                    <summary class="modal-trigger"><li>Mariages</li></summary>
+                    <img src="img/galerie/weeding.webp" class="modal-content">
+                  </details>
+                  <details class="modal">
+                    <summary class="modal-trigger"><li>Anniversaires</li></summary>                                                   
+                    <img src="img/galerie/bapteme.jpg" class="modal-content">
+                  </details>
+              </ul>
+        </div>
+        <div class="listing">
+          <ul>
+            <details class="modal">
+              <summary class="modal-trigger"><li>Evenementiel</li></summary>
+              <img src="img/galerie/weeding.webp" class="modal-content">
+            </details>
+            <details class="modal">
+              <summary class="modal-trigger"><li>Conférences</li></summary>                                                   
+              <img src="img/galerie/bapteme.jpg" class="modal-content">
+            </details>
+            <details class="modal">
+              <summary class="modal-trigger"><li>Kick off</li></summary>                                                   
+              <img src="img/galerie/bapteme.jpg" class="modal-content">
+            </details>                                                                                                                                          
+          </ul>
+        </div>
+  <!--          <div class="listing">
                 <ul>
                     <li>Evenementiel</li>
                     <li>Conférences</li>
                     <li>Kick off</li>
                 </ul>
-            </div>
-
-        </section> 
+            </div> -->
+      </section> 
             <div class="btn">
                 <button class="btn-contact"><a href="../form/contact.html">Contactez-moi !</a></button>
             </div> 
         <section class="galerie">
             <div>
-                <a href="img/street-art/street-mickey.jpeg" target="_blank">
+             <a href="img/street-art/street-mickey.jpeg" target="_blank">
                     <img src="img/street-art/street-mickey.jpeg" alt=""  class="photogal">
-                </a>
+                </a> 
                 <a href="img/street-art/spiderman.jpg" target="_blank" >
                     <img src="img/street-art/spiderman.jpg" alt="" class="photogal">
                 </a>
@@ -152,5 +182,11 @@
     </main>
 
     <script src="js/mon_script.js"></script>
+<!--     <script>
+      let tigger = document.getElementById("tigger");
+      tigger.onclick = function maModal(){
+        this.style.color='#cce8ea'
+      }
+    </script> -->
 </body>
 </html>

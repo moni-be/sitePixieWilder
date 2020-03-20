@@ -64,10 +64,11 @@ figure .photo
     background-color: #cce8ea;
     height: auto;
     color: #001118;
+    z-index: 3;
 }
 
 .listing{
-    width: 40%;
+    width: 50%;
     display: inline-block;
     height: auto;
     padding-left: 10%;

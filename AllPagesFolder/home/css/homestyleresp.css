@@ -144,7 +144,7 @@ nav li {
     left: 30px;
     top:15px;
     width: 100px;
-    z-index: 1000;
+    z-index: 5;
     visibility: visible;
     display: block;
    }
