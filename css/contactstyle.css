@@ -5,6 +5,7 @@
 *{
   font-family: 'Raleway', sans-serif;
   margin:0px;
+  padding: 0;
 }
 body{
   display:flex;
@@ -27,8 +28,16 @@ header {
 
 .logo {
   width: 200px;
+  position: relative;
+  left: 40px;
+  padding-right:5px;
 }
+
 header a .logo-bg{
+  visibility: hidden;
+}
+
+.bg {
   visibility: hidden;
 }
 
@@ -39,15 +48,24 @@ nav ul li a {
   margin: 0 10px;
 }
 
+.navBar ul {
+  width: 100%;
+  margin: 0;
+}
+
+.navBox li a{
+  color: rgba(252, 76, 2, 1);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
 .navBox li a:hover {
   color: rgba(252, 76, 2, 1);
   /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #b37cb5);
   border-radius: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
 }
 
 nav li {
@@ -319,6 +337,7 @@ button {
   margin-left: 15%;
 }
 
+
 footer {
   position: absolute;
   bottom: 0;
@@ -359,7 +378,7 @@ footer a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: baseline;
-  justify-content: center;
+  justify-content: start;
   
 }
 
