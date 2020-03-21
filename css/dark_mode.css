@@ -17,16 +17,37 @@
   }
   
   .dark{
-    position: sticky;
+    position: relative;
     width: 100%;
-    margin-top: 8%;
     text-align: right;
-    margin-right: 50%;
-
+    margin-right: 15%;
+    margin-top: 10%;
   }
+
   .dark label{
     padding-right: 10px;
 }
+
+@media only screen and (max-width:667px) 
+{
+  .dark{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 25%;
+  }
+
+}
+
+@media only screen and (min-width:1024) 
+{
+  .dark{
+    margin-top: 30%;
+  }
+
+}
+
+
 
 
 
